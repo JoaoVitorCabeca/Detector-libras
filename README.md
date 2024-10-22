@@ -1,14 +1,45 @@
 # tradutor-de-libras
+Projeto de Reconhecimento de Sinais em Libras
+Este projeto visa reconhecer sinais em Libras (Língua Brasileira de Sinais) a partir de vídeos utilizando captura de dados em tempo real, aprendizado de máquina e redes neurais. O projeto utiliza bibliotecas populares como MediaPipe, TensorFlow, OpenCV, NumPy, Matplotlib, entre outras.
 
+Pré-requisitos
+Certifique-se de ter instalado as seguintes bibliotecas em seu ambiente:
+
+bash
+Copiar código
 sudo apt install mediapipe tensorflow 
-sudo apt install Opencv
+sudo apt install opencv
 sudo apt install numpy sklearn 
 sudo apt install matplotlib
 sudo apt install pandas
 sudo apt install warnings
+Essas bibliotecas são necessárias para processar imagens e vídeos, realizar manipulações de dados e treinar o modelo de aprendizado de máquina para reconhecimento dos sinais.
 
-Use o captura_dados.py para preencher o dataset_libras.csv com informações, depois treine o modelo para criação das classes de cada sinal. Use o reconhecimento.py para fazer o reconhecimento do video.
+Arquivos Principais
+captura_dados.py: Script para capturar dados e preencher o arquivo dataset_libras.csv. Ele coleta as informações necessárias para o treinamento do modelo.
+reconhecimento.py: Script para reconhecer os sinais a partir de vídeos. Este script utiliza o modelo treinado para classificar os sinais em Libras.
+dataset_libras.csv: Arquivo onde os dados capturados serão armazenados. Ele contém as características dos sinais que serão usados para treinar o modelo.
+Como Usar
+1. Capturando Dados
+Antes de treinar o modelo, você precisará capturar seus próprios dados de sinais, caso deseje. Para isso, siga os passos abaixo:
 
-O dataset_libras.csv upado nesse git está com alguns dados, caso queira colocar seus proprios dados basta apagar o conteudo do .csv e fazer a captura de novos dados
+Apague o conteúdo do arquivo dataset_libras.csv, caso deseje iniciar um novo conjunto de dados:
 
+bash
+Copiar código
+> dataset_libras.csv
+Execute o script captura_dados.py para começar a capturar os sinais. Certifique-se de estar preparado para realizar os movimentos que deseja capturar. O script registrará os dados em tempo real e os salvará no CSV.
 
+2. Treinando o Modelo
+Com os dados capturados no dataset_libras.csv, você está pronto para treinar o modelo de reconhecimento de sinais. O processo de treinamento criará classes de cada sinal capturado. Certifique-se de que o CSV esteja preenchido com uma quantidade suficiente de dados para garantir uma boa precisão no reconhecimento.
+
+O treinamento é feito diretamente dentro do script captura_dados.py ou em um script separado que você pode adaptar conforme a necessidade.
+
+3. Reconhecimento de Sinais
+Após treinar o modelo, execute o script reconhecimento.py para iniciar o reconhecimento dos sinais a partir de vídeos. O script capturará frames do vídeo, aplicará o modelo treinado e fornecerá a classe correspondente para o sinal detectado.
+
+bash
+Copiar código
+python reconhecimento.py
+4. Testando com Novos Sinais
+Se quiser adicionar novos sinais ao seu modelo, repita o processo de captura de dados e reentreine o modelo. Isso permite melhorar continuamente o desempenho e a abrangência do sistema.
