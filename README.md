@@ -5,15 +5,14 @@ Este projeto visa reconhecer sinais em Libras (Língua Brasileira de Sinais) a p
 Pré-requisitos
 Certifique-se de ter instalado as seguintes bibliotecas em seu ambiente:
 
-bash
-Copiar código
+
+```bash
 sudo apt install mediapipe tensorflow 
 sudo apt install opencv
 sudo apt install numpy sklearn 
 sudo apt install matplotlib
 sudo apt install pandas
-sudo apt install warnings
-Essas bibliotecas são necessárias para processar imagens e vídeos, realizar manipulações de dados e treinar o modelo de aprendizado de máquina para reconhecimento dos sinais.
+sudo apt install warnings bash```
 
 Arquivos Principais
 captura_dados.py: Script para capturar dados e preencher o arquivo dataset_libras.csv. Ele coleta as informações necessárias para o treinamento do modelo.
