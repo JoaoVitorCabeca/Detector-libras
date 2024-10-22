@@ -23,12 +23,7 @@ Como Usar
 1. Capturando Dados
 Antes de treinar o modelo, você precisará capturar seus próprios dados de sinais, caso deseje. Para isso, siga os passos abaixo:
 
-Apague o conteúdo do arquivo dataset_libras.csv, caso deseje iniciar um novo conjunto de dados:
-
-bash
-Copiar código
-> dataset_libras.csv
-Execute o script captura_dados.py para começar a capturar os sinais. Certifique-se de estar preparado para realizar os movimentos que deseja capturar. O script registrará os dados em tempo real e os salvará no CSV.
+Apague o conteúdo do arquivo dataset_libras.csv, caso deseje iniciar um novo conjunto de dados.
 
 2. Treinando o Modelo
 Com os dados capturados no dataset_libras.csv, você está pronto para treinar o modelo de reconhecimento de sinais. O processo de treinamento criará classes de cada sinal capturado. Certifique-se de que o CSV esteja preenchido com uma quantidade suficiente de dados para garantir uma boa precisão no reconhecimento.
