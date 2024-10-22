@@ -6,13 +6,14 @@ Pré-requisitos
 Certifique-se de ter instalado as seguintes bibliotecas em seu ambiente:
 
 
-```bash
+```
 sudo apt install mediapipe tensorflow 
 sudo apt install opencv
 sudo apt install numpy sklearn 
 sudo apt install matplotlib
 sudo apt install pandas
-sudo apt install warnings bash```
+sudo apt install warnings
+```
 
 Arquivos Principais
 captura_dados.py: Script para capturar dados e preencher o arquivo dataset_libras.csv. Ele coleta as informações necessárias para o treinamento do modelo.
