@@ -7,12 +7,12 @@ Certifique-se de ter instalado as seguintes bibliotecas em seu ambiente:
 
 
 ```
-sudo apt install mediapipe tensorflow 
-sudo apt install opencv
-sudo apt install numpy sklearn 
-sudo apt install matplotlib
-sudo apt install pandas
-sudo apt install warnings
+pip install mediapipe tensorflow 
+pip install opencv
+pip install numpy sklearn 
+pip install matplotlib
+pip install pandas
+pip install warnings
 ```
 
 Arquivos Principais
